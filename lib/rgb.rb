@@ -5,5 +5,5 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  hex.scan(/[\da-f][\da-f]/).map(&:hex)
+  hex.scan(/[\da-f]{2}/).map(&:hex)
 end
